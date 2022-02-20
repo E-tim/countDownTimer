@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background-color: lightblue;
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 17px
+}
+.inWrapper {
+    background-color: ;
+}
+#eventName {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+}
+#eventDate {
+    height: 40px;
+    width: 214px;
+    font-size: 15px;
+}
+.times {
+    height: 40px;
+    width: 90px;
+}
+label {
+    color: white;
+}
+button {
+    width: 300px;
+    height: 40px;
+}
+.hides {
+    margin-top: 20px;
+    background-color: white;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+    #eventName {
+        width: 300px;
+        height: 60px;
+        font-size: 15px;
+    }
+    #eventDate {
+        height: 40px;
+        width: 50vw;
+        font-size: 15px;
+    }
+    .times {
+        height: 40px;
+        width: 90px;
+    }
+    label {
+        color: white;
+    }
+    button {
+        width: 300px;
+        height: 40px;
+    }
+}
