@@ -2,41 +2,51 @@
     margin: 0;
     padding: 0;
 }
+.header {
+    background-color: lightseagreen;
+    padding: 7px;
+    /* margin-bottom: 10px; */
+}
+h1 {
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+}
 
 .wrapper {
-    background-color: lightblue;
+    background-color: lightgreen;
+    border-radius: 10px;
+    margin: 2% 10%;
     height: 60vh;
     display: grid;
     justify-content: center;
     align-items: center;
 }
-h1 {
-    font-size: 30px;
-    color: white;
-    margin-bottom: 20px;
-    margin-left: 17px
-}
-.inWrapper {
-    background-color: ;
-}
+
+
 #eventName {
     width: 300px;
+    border: 1px solid lightgreen;
     height: 40px;
     font-size: 15px;
 }
 #eventDate {
     height: 40px;
+    border: 1px solid lightgreen;
     width: 214px;
     font-size: 15px;
 }
-.times {
-    height: 40px;
-    width: 90px;
+#eventDate,#eventName:focus {
+    outline: none;
 }
+
 label {
     color: white;
 }
 button {
+    background-color: lightseagreen;
+    border: 1px solid lightseagreen;
+    color: white;
     width: 300px;
     height: 40px;
 }
@@ -47,19 +57,57 @@ button {
     height: 80px;
     text-align: center;
 }
-.hide {
-    display: none;
+.myDiv {
+    background-color: lightgreen;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 35%;
+    position: relative;
+}
+.myDiv h2 {
+    text-transform: uppercase;
+    color: white;
+}
+.myDiv p {
+    color: white;
+    background-color: lightseagreen;
+    padding: 10px;
+
+}
+.fa-trash-alt {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: white;
 }
 
-@media only screen and (max-width: 425px) {
+/* .myDiv {
+    background-color: red;
+    margin: 50px;
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myDiv p {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+} */
+@media only screen and (max-width: 768px) {
     #eventName {
-        width: 300px;
+        width: 70vw;
         height: 60px;
         font-size: 15px;
     }
     #eventDate {
-        height: 40px;
-        width: 50vw;
+        height: 50px;
+        width: 53vw;
         font-size: 15px;
     }
     .times {
@@ -70,7 +118,16 @@ button {
         color: white;
     }
     button {
-        width: 300px;
-        height: 40px;
+        width: 70vw;
+        height: 50px;
+    }
+    .myDiv {
+        background-color: lightgreen;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2% 15%;
     }
 }
